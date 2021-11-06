@@ -12,6 +12,11 @@
   .header{
       background-color: maroon;
       padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+ 
+     
       
   }
   .header a {
@@ -20,44 +25,83 @@
 
 
   }
+    #currentTime {
+           font-size: 20px;
+           color: #ffff;
+    }
+
+
+
+
 
         #wrapper {
-            position: absolute;
-            left: 30%;
-            top: 20%;
-            width: 500px;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+      
+       
+        }
+        #wrapper .content{
+           margin-top: 50px;
+         width: 50%;
             height: 500px;
             border-radius: 20px;
             background-color: paleturquoise;
+            display: flex;
+            justify-content: center;
+        
+            
+         
         }
         #startTime {
             background-color: maroon;
-            margin-left: 33%;
             padding: 15px 32px;
             font-size: 20px;
             color: white;
+          margin-left: 30%;
+
+            
+            
+
+
+            
+            
         }
         #startTime:hover{
            background-color: lemonchiffon;
            color: black;
         }
         #questionsDiv {
-            margin: 20px;
+          margin-top: 50px;;
+            font-size: 25px;
+            width: 70%;
         }
         #questionsDiv h1{
             font-size: 40px;
             text-decoration: underline;
+           
         }
         #questionsDiv p {
             font-size: 20px;
             text-align: center;
             padding: 20px;
+            
+            
         }
+       
+
+      
 
 
-        #currentTime {
-            float: right;
-        }
+            
+            
+
+
+     
+            
+           
+            
+        
 
         #goBack {
             background-color: purple;
@@ -103,7 +147,7 @@
         }
 
         label {
-            margin-right: 10px;
+            margin-right: 20px;
         }
         input {
             margin-bottom: 20px;
@@ -113,66 +157,212 @@
 
         h1 {
             text-align: center;
+           
         }
 
         li {
-            background-color: purple;
-            margin-top: 10px;
+            background-color:steelblue;
+            margin: 20px;
+            margin-left: 20px;
             padding: 5px 15px;
-            width: 80%;
-            font-size: 18px;
+            width: 50%;
+            font-size: 22px;
             color: white;
         }
+        li:hover{
+            background-color: lemonchiffon;
+            color: black;
+         }
+        
 
         #createDiv {
             margin-top: 20px;
             border-top: 1px solid lightgray;
         }
+ 
 
-        /* Start media queries */
-        /* A Media Query max-width: 786px */
-@media screen and (max-width: 786px) {
-    /* Resized content to fit 786px  */
-        body {
-            max-width: 786px;
-        }
-    /* Resized main-content to fit 786px  */
-    #wrapper {
-        position: absolute;
-        left: 20%;
-    }
-
-    a {
-        margin-left: 20%;
-    }
-        #goBack {
-            
-            position: relative;
-            left: 55%;
-        }
-
-        #clear {
-            
-            position: relative;
-            right: 5%;
-            
-        }
-    }
+    @media screen and (max-width: 900px) {
         
-    /* A Media Query max-width: 640px */
-    @media screen and (max-width: 640px) {
-     /* Resized content to fit 640px  */
-     body {
-            min-width: 640px;
+        
+        .header a {
+            font-size: 30px;
+            color: #fff;
+            margin-left: 0;
         }
-    /* Resized main-content to fit 640px  */
-    #wrapper {
-        position: absolute;
-        left: 10%;
+        #wrapper {
+           width: 100%;
+           
+          
+          
+           
+        
+         }
+         #wrapper .content{
+            margin-top: 50px;
+             width: 100%;
+             height: 500px;
+             top: 50px;
+           
+          
+             
+          
+         }
+         #startTime {
+         
+          margin-left: 32%;
+            
+        }
+        #questionsDiv {
+            margin-top: 50px;
+             font-size: 20px;
+             width: 50%;
+            
+         }
+         #questionsDiv h1{
+             font-size: 30px;
+           
+             text-align: center;
+            
+         }
+         #questionsDiv p {
+             font-size: 15px;
+             text-align: center;
+             padding: 20px;
+             
+             
+         }
+         #createDiv {
+            margin-top: 20px;
+            border-top: 1px solid lightgray;
+           
+        }
+        
     }
-      a {
-          margin-left: 10%;
-      }
 
-     
-}
+    @media screen and (max-width: 500px) {
+        
+        
+        .header a {
+            font-size: 15px;
+            color: #fff;
+            margin-left: 0;
+        }
+        #wrapper {
+           width: 100%;
+           
+          
+          
+           
+        
+         }
+         #wrapper .content{
+            margin-top: 50px;
+             width: 100%;
+             height: 500px;
+             top: 50px;
+           
+          
+             
+          
+         }
+         #startTime {
+         
+          margin-left: 20%;
+          font-size: 20px;
+            
+        }
+        #questionsDiv {
+            margin-top: 50px;
+             font-size: 20px;
+             width: 50%;
+            
+         }
+         #questionsDiv h1{
+             font-size: 24px;
+           
+             text-align: center;
+            
+         }
+         #questionsDiv p {
+             font-size: 20px;
+             text-align: center;
+           
+             
+             
+         }
+         #createDiv {
+             margin-top: 50px;
+            margin-top: 20px;
+            border-top: 1px solid lightgray;
+           
+        }
+        li {
+            
+           font-size: 14px;
+        }
+         
+
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        
+        .header a {
+            font-size: 15px;
+            color: #fff;
+            margin-left: 0;
+        }
+        
+         #wrapper .content{
+            margin-top: 50px;
+             width: 100%;
+             height: 500px;
+             top: 50px;
+         
+           
+          
+             
+          
+         }
+         #startTime {
+         
+          margin-left: 20%;
+          font-size: 15px;
+            
+        }
+        #questionsDiv {
+            margin-top: 50px;
+             font-size: 15px;
+             width: 50%;
+            
+         }
+         #questionsDiv h1{
+             font-size: 20px;
+            
+            
+           
+             
+            
+         }
+         #questionsDiv p {
+             font-size: 15px;
+            
+             
+           
+           
+             
+             
+         }
+         #createDiv {
+             margin-top: 50px;
+            margin-top: 20px;
+            border-top: 1px solid lightgray;
+           
+        }
+        li {
+            
+           font-size: 14px;
+        }
+         
+
+    }
